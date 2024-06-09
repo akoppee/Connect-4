@@ -1,0 +1,41 @@
+/* General styling for the Tic Tac Toe-like Connect Four board */
+.connect-four {
+    display: grid;
+    width: 70vmin;  /* Adjust the width as per your layout needs */
+    height: 60vmin;  /* Scaled to fit a 7x6 grid properly */
+    grid-template-columns: repeat(7, 1fr);  /* 7 columns for Connect Four */
+    grid-template-rows: repeat(6, 1fr);  /* 6 rows for Connect Four */
+    gap: 10px;  /* Increase gap for clear separation */
+    background-color: #0000ff;  /* White background for clarity */
+    padding: 5px;
+    border-radius: 1%;
+    border: 10px solid #00a;  /* Dark border for a classic look */
+  }
+  
+  /* Styling for individual slots on the board */
+  .slot {
+    border-radius: 100%;  /* Square slots for a Tic Tac Toe feel */
+    background-color: #F0F0F0;  /* Light gray for visibility */
+    border: 1px solid #333;  /* Subtle borders for each slot */
+  }
+  
+  /* Styling for player discs */
+  .disc {
+    width: 100%;  /* Full coverage within the slot */
+    height: 100%;
+    border-radius: 50%;  /* Keep discs circular for visual contrast */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Red player disc */
+  .red-disc {
+    background-color: #FF4136;  /* Bright red for easy visibility */
+  }
+  
+  /* Yellow player disc */
+  .yellow-disc {
+    background-color: #FFDC00;  /* Bright yellow for contrast */
+  }
+  
